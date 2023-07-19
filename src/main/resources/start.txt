@@ -1,0 +1,9 @@
+Pomysl na aplikcje: oszybkie wyszukiwanie ulubionych miejsc
+
+ToDo: Czy sa jakies API z Google Maps do wyszukiwania miejsc
+
+- chce zjesc w restauracji. Wiem gdzie chce isc. Chce ja latwo i szybko dodac do puli ulubionych miejsc  (DODAWANIE)
+- mozliwosc wyslania db do znajomego (UDOSTEPNIANIE)
+- mozliwosc wyszukiwania po slowach kluczowych (WYSZUKIWANIE)
+- ulubione: punktacja
+
