@@ -1,13 +1,17 @@
 package com.example.live_agenda;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Getter;
 
 @Getter
 @Entity
 public class Place {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private String address;
@@ -16,8 +20,8 @@ public class Place {
     public Place() {
     }
 
-    public Place(int id, String name, String address, String description) {
-        this.id = id;
+    public Place( String name, String address, String description) {
+
         this.name = name;
         this.address = address;
         this.description = description;

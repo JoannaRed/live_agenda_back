@@ -6,12 +6,18 @@ import org.springframework.stereotype.Service;
 @Service
 public class PlaceService {
 
-    public Place getPlace(){
-        return new Place(1, "Pizzeria", "Via Belvedere 156, Massa", "pizza, spaghetti");
+    private PlaceRepository placeRepository;
+
+    public PlaceService(PlaceRepository placeRepository) {
+        this.placeRepository = placeRepository;
+    }
+
+    public Iterable<Place> getPlaces(){
+         return placeRepository.findAll();
     }
 
     public void addPlace(Place place){
-        System.out.println(place);
+        placeRepository.save(place);
     }
 
 }

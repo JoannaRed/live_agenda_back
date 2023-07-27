@@ -17,8 +17,8 @@ public class PlaceController {
     }
 
     @GetMapping("/api/places")
-    public  Place getPlace(){
-        return placeService.getPlace();
+    public  Iterable<Place> getPlaces(){
+        return placeService.getPlaces();
 
     }
 
