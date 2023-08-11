@@ -16,15 +16,17 @@ public class Place {
     private String name;
     private String address;
     private String description;
+    private Integer score;
 
     public Place() {
     }
 
-    public Place( String name, String address, String description) {
+    public Place( String name, String address, String description, Integer score) {
 
         this.name = name;
         this.address = address;
         this.description = description;
+        this.score = score;
     }
 
     @Override
@@ -34,6 +36,7 @@ public class Place {
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", description='" + description + '\'' +
+                ", score='" + score + '\'' +
                 '}';
     }
 }

@@ -18,12 +18,14 @@ public class PlaceController {
 
     @GetMapping("/api/places")
     public  Iterable<Place> getPlaces(){
+
         return placeService.getPlaces();
 
     }
 
     @PostMapping("/api/places")
     public void addPlace(@RequestBody Place place){
+        System.out.println(place);
         placeService.addPlace(place);
     }
 
