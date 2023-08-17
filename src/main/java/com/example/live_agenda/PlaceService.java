@@ -17,6 +17,9 @@ public class PlaceService {
     }
 
     public void addPlace(Place place){
+        if(place.getScore() < 0 || place.getScore() > 5 ){
+            throw new IllegalArgumentException("Score poza zakresem");
+        }
         placeRepository.save(place);
     }
 
